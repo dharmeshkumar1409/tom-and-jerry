@@ -42,7 +42,7 @@ function draw() {
     //Write condition here to evalute if tom and jerry collide
 
     if (tom.x - jerry.x < (tom.width - jerry.width) / 2) {
-        tom.setVelocityX = 0;
+        tom.velocityX = 0;
         tom.addAnimation("cat_resting", tom3Img);
         tom.changeAnimation("cat_resting");
         jerry.addAnimation("jerry_resting", jerry3Img);
